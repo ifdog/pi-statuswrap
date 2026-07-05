@@ -1,5 +1,7 @@
 # @ifdog/pi-statuswrap
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 One extension status per footer line for the [pi](https://pi.dev) coding agent.
 
 ## Problem
