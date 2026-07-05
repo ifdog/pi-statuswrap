@@ -56,6 +56,8 @@ This extension monkey-patches the exported `FooterComponent.prototype.render`. I
 
 If any of these change, the patch falls back to the original (single-line truncated) output via a `try/catch` rather than crashing. Drop this extension once pi folds statuses onto multiple lines natively.
 
+Tested against pi `@earendil-works/pi-coding-agent` 0.80.x.
+
 ## License
 
 MIT

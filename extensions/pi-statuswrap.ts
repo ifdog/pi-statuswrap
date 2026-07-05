@@ -30,6 +30,10 @@ const sanitize = (v: string): string =>
 	v.replace(/[\r\n\t]/g, " ").replace(/ +/g, " ").trim();
 
 export default function (): void {
+	// Guard: if a future pi drops the export or changes the render shape, no-op
+	// instead of crashing the extension loader. The try/catch below covers the
+	// instance-field side; this covers the class-export side.
+	if (!FooterComponent?.prototype?.render) return;
 	const proto = FooterComponent.prototype as any;
 	if (proto.__statuswrap) return; // idempotent: no re-wrap on /reload
 	const orig = proto.render;

@@ -56,6 +56,8 @@ pi install npm:@ifdog/pi-statuswrap
 
 任一变化时，patch 通过 `try/catch` 回退到原始输出（单行截断），而非崩溃。等 pi 原生支持状态多行折叠后，删掉本扩展即可。
 
+已测试 pi 版本：`@earendil-works/pi-coding-agent` 0.80.x。
+
 ## 许可证
 
 MIT

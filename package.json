@@ -1,6 +1,6 @@
 {
   "name": "@ifdog/pi-statuswrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One extension status per footer line. Fixes pi's core footer truncating concurrent extension statuses to a single line and silently dropping the ones that sort later.",
   "keywords": [
     "pi-package",
@@ -22,6 +22,8 @@
   "files": [
     "extensions",
     "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "pi": {
