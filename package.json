@@ -1,0 +1,36 @@
+{
+  "name": "@ifdog/pi-statuswrap",
+  "version": "1.0.0",
+  "description": "One extension status per footer line. Fixes pi's core footer truncating concurrent extension statuses to a single line and silently dropping the ones that sort later.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "footer",
+    "status",
+    "statusline"
+  ],
+  "license": "MIT",
+  "author": "ifdog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifdog/pi-statuswrap.git"
+  },
+  "homepage": "https://github.com/ifdog/pi-statuswrap",
+  "bugs": {
+    "url": "https://github.com/ifdog/pi-statuswrap/issues"
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/pi-statuswrap.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
